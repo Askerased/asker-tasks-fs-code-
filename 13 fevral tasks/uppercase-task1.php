@@ -9,7 +9,7 @@ while ( isset( $text[ $i ] ) )
 	if ( $text[ $i ] === '.' )
 	{
 		$j = 1;
-		while ( isset( $text[ $i + $j ] ) )
+		while ( isset( $text[ $i + $j ] ) ) // noqteden sonraki ilk herfi tapan funksiya
 		{
 			if ( $text[ $i + $j ] !== ' ' )
 			{
