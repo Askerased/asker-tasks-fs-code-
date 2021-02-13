@@ -8,7 +8,7 @@ while ( isset( $text[ $i ] ) )
 {
 	if ( $text[ $i ] === ' ' )
 	{
-		if ( $text[ $i + 1 ] !== ' ' )
+		if ( $text[ $i + 1 ] !== ' ' ) // bir boshluq ve herf yanashi olanda bir soz sayacaq
 		{
 			$wordCount++;
 		}
