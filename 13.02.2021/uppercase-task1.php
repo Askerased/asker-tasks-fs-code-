@@ -4,11 +4,13 @@ $text      = ' bu metndeki butun cumleler balaca herfle bashlayirdi. ta ki bir p
 $text      = trim( $text );
 $i         = 0;
 $text[ 0 ] = strtoupper( $text[ 0 ] );
+
 while ( isset( $text[ $i ] ) )
 {
 	if ( $text[ $i ] === '.' )
 	{
 		$j = 1;
+
 		while ( isset( $text[ $i + $j ] ) ) // noqteden sonraki ilk herfi tapan funksiya
 		{
 			if ( $text[ $i + $j ] !== ' ' )
