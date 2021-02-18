@@ -2,28 +2,19 @@
 
 function axtar ( $list, $axtar )
 {
-	$i = 0;
 
 	foreach ( $list as $element )
 	{
 		if ( $element === $axtar )
 		{
-			$i++;
+			return TRUE;
 		}
 	}
 
-	if ( $i != 0 )
-	{
-		return TRUE;
-	}
-	else
-	{
-		return FALSE;
-	}
+	return FALSE;
 }
 
-$seherler =
-[
+$seherler = [
 	'Baku',
 	'Berlin',
 	'Brooklyn',

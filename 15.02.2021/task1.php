@@ -21,10 +21,12 @@ function divider ( $text, $symbol )
 		}
 	}
 
-	return $tarr;
+	return array_filter( $tarr );
+
 }
 
 $text   = 'Asked:Alive:2002:BDU';
 $symbol = ':';
 
-print_r( divider( $text, $symbol ) );
+print_r( divider( '', $symbol ) );
+

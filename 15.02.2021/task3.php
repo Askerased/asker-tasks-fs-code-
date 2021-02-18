@@ -2,6 +2,11 @@
 
 function reverseArray ( $arr )
 {
+	if (array_filter($arr) == NULL)
+	{
+		return $arr;
+	}
+
 	$i = count( $arr ) - 1;
 
 	while ( isset( $arr[ $i ] ) )
@@ -10,7 +15,7 @@ function reverseArray ( $arr )
 		$i--;
 	}
 
-	return $reversed_arr;
+	return array_filter($reversed_arr);
 }
 
 $cumle = [
@@ -19,6 +24,7 @@ $cumle = [
 	'aylari',
 	'yaz'
 ];
+$cumle1 = [];
 
-print_r( reverseArray( $cumle ) );
+print_r( reverseArray( $cumle1 ) );
 
